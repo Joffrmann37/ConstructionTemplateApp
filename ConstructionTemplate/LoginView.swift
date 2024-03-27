@@ -13,7 +13,7 @@ struct LoginView: View {
     @State var passwordText = ""
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 10) {
             HeaderView()
             Form {
                 TextField("", text: $emailText, prompt: Text("E-mail"))
@@ -25,8 +25,13 @@ struct LoginView: View {
                     .border(.white)
                     .foregroundColor(.white)
             }
-            .scrollContentBackground(.hidden)
-            .background(.purple)
+            .overlay( /// apply a rounded border
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(.purple, lineWidth: 1)
+            )
+            .cornerRadius(20)
+            .padding(.init(top: 0, leading: 10, bottom: 10, trailing: 10))
+            .frame(height: 160)
             NavigationLink(
                 destination: SiteListView(),
                 isActive: $siteRoute) {
@@ -35,7 +40,9 @@ struct LoginView: View {
                         siteRoute = true
                     }
                 }
-                .padding(.bottom, 200)
+                .scrollContentBackground(.hidden)
+                .background(.purple)
+                .padding()
         }
         .containerRelativeFrame([.horizontal, .vertical])
         .background(.purple)

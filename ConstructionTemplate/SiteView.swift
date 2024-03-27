@@ -31,6 +31,10 @@ struct MockStore {
         Site(title: "Site 20", description: "This is site 20 located in Grayson, GA", location: "Grayson, GA", jobs: getDefaultJobs()),
     ]
     
+    static var notifications = [
+        Notification(title: "Notification 1", body: "This is notification number 1. Please read and govern yourself accordingly.", date: "03/20/2024"),
+    ]
+    
     private static func getDefaultJobs() -> [Job] {
         let randomIntOne = Int.random(in: 0..<100)
         let randomIntTwo = Int.random(in: 0..<100)
@@ -52,6 +56,13 @@ struct Site: Identifiable {
     let description: String
     let location: String
     let jobs: [Job]
+}
+
+struct Notification: Identifiable {
+    let id = UUID()
+    let title: String
+    let body: String
+    let date: String
 }
 
 struct RowView: View {
@@ -162,13 +173,6 @@ struct SiteListView: View {
                                for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        isSideBarOpened.toggle()
-                    } label: {
-                        Image(systemName: "menucard")
-                    }
-                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         showSheet = true
@@ -225,7 +229,7 @@ struct SiteListView: View {
                         .padding()
                         .presentationDetents([.height(600), .large])
                         .presentationDragIndicator(.automatic)
-                        PrimaryButton(text: "Submit", action: {
+                        SecondaryButton(text: "Submit", action: {
                             print("Button pressed")
                         })
                     }

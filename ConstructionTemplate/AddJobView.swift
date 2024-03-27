@@ -59,7 +59,7 @@ struct AddJobView: View {
         .padding()
         .presentationDetents([.height(700), .large])
         .presentationDragIndicator(.automatic)
-        PrimaryButton(text: "Submit", action: {
+        SecondaryButton(text: "Submit", action: {
             print("Button pressed")
         })
     }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B42EDB532BB3A428002DD3D1 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42EDB522BB3A428002DD3D1 /* SideMenuView.swift */; };
+		B42EDB552BB3A4BE002DD3D1 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42EDB542BB3A4BE002DD3D1 /* MyAccountView.swift */; };
+		B42EDB572BB3BA32002DD3D1 /* PastSitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42EDB562BB3BA32002DD3D1 /* PastSitesView.swift */; };
+		B42EDB592BB3BE8B002DD3D1 /* PastJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42EDB582BB3BE8B002DD3D1 /* PastJobsView.swift */; };
+		B42EDB5B2BB3C2CF002DD3D1 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42EDB5A2BB3C2CF002DD3D1 /* NotificationsView.swift */; };
 		B4D0D3592BA9C1F500EBDE99 /* ConstructionTemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0D3582BA9C1F500EBDE99 /* ConstructionTemplateApp.swift */; };
 		B4D0D35B2BA9C1F500EBDE99 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0D35A2BA9C1F500EBDE99 /* WelcomeView.swift */; };
 		B4D0D35D2BA9C1FA00EBDE99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D0D35C2BA9C1FA00EBDE99 /* Assets.xcassets */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B42EDB522BB3A428002DD3D1 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		B42EDB542BB3A4BE002DD3D1 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
+		B42EDB562BB3BA32002DD3D1 /* PastSitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastSitesView.swift; sourceTree = "<group>"; };
+		B42EDB582BB3BE8B002DD3D1 /* PastJobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastJobsView.swift; sourceTree = "<group>"; };
+		B42EDB5A2BB3C2CF002DD3D1 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		B4D0D3552BA9C1F500EBDE99 /* ConstructionTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstructionTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D0D3582BA9C1F500EBDE99 /* ConstructionTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructionTemplateApp.swift; sourceTree = "<group>"; };
 		B4D0D35A2BA9C1F500EBDE99 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -107,7 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				B4D0D3582BA9C1F500EBDE99 /* ConstructionTemplateApp.swift */,
+				B42EDB542BB3A4BE002DD3D1 /* MyAccountView.swift */,
+				B42EDB562BB3BA32002DD3D1 /* PastSitesView.swift */,
+				B42EDB582BB3BE8B002DD3D1 /* PastJobsView.swift */,
+				B42EDB5A2BB3C2CF002DD3D1 /* NotificationsView.swift */,
 				B4D0D35A2BA9C1F500EBDE99 /* WelcomeView.swift */,
+				B42EDB522BB3A428002DD3D1 /* SideMenuView.swift */,
 				B4D0D3822BAA839A00EBDE99 /* RegisterView.swift */,
 				B4D0D3862BB1DEC600EBDE99 /* SiteView.swift */,
 				B4D0D3882BB20B5D00EBDE99 /* SiteDetailView.swift */,
@@ -276,12 +291,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D0D3832BAA839A00EBDE99 /* RegisterView.swift in Sources */,
+				B42EDB572BB3BA32002DD3D1 /* PastSitesView.swift in Sources */,
 				B4D0D38B2BB21F6B00EBDE99 /* JobDetailView.swift in Sources */,
+				B42EDB552BB3A4BE002DD3D1 /* MyAccountView.swift in Sources */,
 				B4D0D38D2BB378F000EBDE99 /* AddJobView.swift in Sources */,
 				B4D0D35B2BA9C1F500EBDE99 /* WelcomeView.swift in Sources */,
 				B4D0D3892BB20B5D00EBDE99 /* SiteDetailView.swift in Sources */,
 				B4D0D3872BB1DEC600EBDE99 /* SiteView.swift in Sources */,
+				B42EDB532BB3A428002DD3D1 /* SideMenuView.swift in Sources */,
 				B4D0D3852BAE267700EBDE99 /* LoginView.swift in Sources */,
+				B42EDB5B2BB3C2CF002DD3D1 /* NotificationsView.swift in Sources */,
+				B42EDB592BB3BE8B002DD3D1 /* PastJobsView.swift in Sources */,
 				B4D0D3592BA9C1F500EBDE99 /* ConstructionTemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
